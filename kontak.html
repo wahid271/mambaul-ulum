@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Mambaul Uluum Premium</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content">
+        <div class="top-left"><span><i class="fas fa-phone"></i> +62 812-3456-7890</span></div>
+    </div></div></div>
+    <nav class="navbar" id="navbar">
+        <div class="container"><div class="nav-wrapper">
+            <a href="index.html" class="logo"><div class="logo-icon">🕌</div><div class="logo-text"><h1>Mambaul Uluum</h1><span>Premium Islamic Boarding</span></div></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="pendidikan.html">Pendidikan</a></li><li><a href="pesantren.html">Pesantren</a></li><li><a href="ppdb.html">PPDB</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html" class="active">Kontak</a></li>
+            </ul>
+            <a href="ppdb.html" class="btn-daftar"><i class="fas fa-user-plus"></i> Daftar</a>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div></div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">Hubungi Kami</h1>
+            <p class="fade-in-up delay-1">Kami siap membantu Anda</p>
+            <div class="breadcrumb fade-in-up delay-2">
+                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> / <span>Kontak</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak-info">
+        <div class="container">
+            <div class="kontak-grid">
+                <div class="kontak-card reveal">
+                    <div class="kontak-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Alamat</h3>
+                    <p>Jl. KH. Hasyim Asy'ari No. 123<br>Kec. Tebuireng, Kab. Jombang<br>Jawa Timur 61471</p>
+                </div>
+                <div class="kontak-card reveal">
+                    <div class="kontak-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Telepon</h3>
+                    <p>+62 812-3456-7890<br>+62 321-123456<br>Fax: +62 321-654321</p>
+                </div>
+                <div class="kontak-card reveal">
+                    <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>info@mambaululuumpremium.sch.id<br>ppdb@mambaululuumpremium.sch.id<br>humas@mambaululuumpremium.sch.id</p>
+                </div>
+                <div class="kontak-card reveal">
+                    <div class="kontak-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 08.00 - 16.00<br>Sabtu: 08.00 - 12.00<br>Minggu: Tutup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak-form-section">
+        <div class="container">
+            <div class="kontak-wrapper">
+                <div class="kontak-map reveal">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.123456!2d112.2307!3d-7.5468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzInNDguNSJTIDExMsKwMTMnNTAuNSJF!5e0!3m2!1sen!2sid!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <form class="kontak-form reveal" id="kontakForm">
+                    <h2><i class="fas fa-paper-plane"></i> Kirim Pesan</h2>
+                    <p>Punya pertanyaan? Silakan isi form di bawah ini, tim kami akan segera merespons.</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nama Lengkap *</label>
+                            <input type="text" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>No. HP</label>
+                            <input type="tel" name="hp">
+                        </div>
+                        <div class="form-group">
+                            <label>Subjek *</label>
+                            <select name="subjek" required>
+                                <option value="">-- Pilih --</option>
+                                <option>Informasi Umum</option>
+                                <option>PPDB</option>
+                                <option>Kerjasama</option>
+                                <option>Kunjungan</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan *</label>
+                        <textarea name="pesan" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom">
+        <p>&copy; 2026 Pondok Pesantren Mambaul Uluum Premium. All Rights Reserved.</p>
+    </div></div></footer>
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+</html>
