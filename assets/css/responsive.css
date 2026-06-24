@@ -1,0 +1,71 @@
+/* ===== TABLET (max 1024px) ===== */
+@media (max-width: 1024px) {
+    .container { padding: 0 15px; }
+    section { padding: 70px 0; }
+    .hero h1 { font-size: 3rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .features-grid, .programs-grid, .edu-grid { grid-template-columns: repeat(2, 1fr); }
+    .fasilitas-grid, .pengurus-grid, .info-cards, .kontak-grid { grid-template-columns: repeat(2, 1fr); }
+    .sambutan-wrapper, .sejarah-wrapper { grid-template-columns: 1fr; gap: 40px; }
+    .vm-grid, .form-wrapper, .kontak-wrapper, .berita-layout { grid-template-columns: 1fr; }
+    .form-sidebar { position: static; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .page-header h1 { font-size: 2.5rem; }
+    .section-header h2 { font-size: 2.25rem; }
+}
+
+/* ===== MOBILE (max 768px) ===== */
+@media (max-width: 768px) {
+    .top-left span:first-child { display: none; }
+    .nav-menu {
+        position: fixed; top: 80px; left: -100%;
+        width: 100%; height: calc(100vh - 80px);
+        background: white; flex-direction: column;
+        padding: 30px; gap: 0; transition: left 0.4s;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        overflow-y: auto;
+    }
+    .nav-menu.active { left: 0; }
+    .nav-menu li { border-bottom: 1px solid var(--border); }
+    .nav-menu a { padding: 15px; display: block; }
+    .hamburger { display: flex; }
+    .btn-daftar { display: none; }
+    .hero { min-height: auto; padding: 60px 0; }
+    .hero h1 { font-size: 2.25rem; }
+    .hero-desc { font-size: 1rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .stat h3 { font-size: 1.75rem; }
+    .features-grid, .programs-grid, .edu-grid,
+    .fasilitas-grid, .pengurus-grid, .info-cards,
+    .kontak-grid, .gallery-grid, .news-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .step-indicator { grid-template-columns: repeat(2, 1fr); }
+    .milestone { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .section-header h2 { font-size: 1.75rem; }
+    .page-header h1 { font-size: 2rem; }
+    .sambutan-content h2, .sejarah-content h2 { font-size: 1.75rem; }
+    .cta-content h2 { font-size: 1.75rem; }
+    .timeline { padding-left: 40px; }
+    .timeline::before { left: 15px; }
+    .timeline-item::before { left: -35px; width: 16px; height: 16px; }
+    .time { min-width: auto; font-size: 0.8rem; padding: 8px 14px; }
+    .news-featured .news-img { height: 250px; }
+    .news-content h2 { font-size: 1.3rem; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .hero-buttons .btn { width: 100%; justify-content: center; }
+    .whatsapp-float { width: 55px; height: 55px; bottom: 20px; right: 20px; }
+    .back-to-top { width: 45px; height: 45px; bottom: 20px; left: 20px; }
+    .confirm-row { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* ===== SMALL MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.75rem; }
+    .logo-text h1 { font-size: 1rem; }
+    .logo-text span { font-size: 0.7rem; }
+    .logo-icon { width: 45px; height: 45px; font-size: 2rem; }
+    .btn { padding: 14px 24px; font-size: 0.9rem; }
+    .ppdb-form, .kontak-form, .form-sidebar { padding: 25px; }
+    .news-content, .vm-card { padding: 25px; }
+}
