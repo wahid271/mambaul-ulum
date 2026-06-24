@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Mambaul Uluum Premium</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content">
+        <div class="top-left"><span><i class="fas fa-phone"></i> +62 812-3456-7890</span></div>
+    </div></div></div>
+    <nav class="navbar" id="navbar">
+        <div class="container"><div class="nav-wrapper">
+            <a href="index.html" class="logo"><div class="logo-icon">🕌</div><div class="logo-text"><h1>Mambaul Uluum</h1><span>Premium Islamic Boarding</span></div></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="pendidikan.html">Pendidikan</a></li><li><a href="pesantren.html">Pesantren</a></li><li><a href="ppdb.html">PPDB</a></li><li><a href="galeri.html" class="active">Galeri</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <a href="ppdb.html" class="btn-daftar"><i class="fas fa-user-plus"></i> Daftar</a>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div></div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">Galeri Kegiatan</h1>
+            <p class="fade-in-up delay-1">Dokumentasi momen berharga di pesantren</p>
+            <div class="breadcrumb fade-in-up delay-2">
+                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> / <span>Galeri</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-filter reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="akademik">Akademik</button>
+                <button class="filter-btn" data-filter="tahfidz">Tahfidz</button>
+                <button class="filter-btn" data-filter="ekskul">Ekstrakurikuler</button>
+                <button class="filter-btn" data-filter="acara">Acara</button>
+                <button class="filter-btn" data-filter="fasilitas">Fasilitas</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item reveal" data-category="fasilitas">
+                    <img src="https://images.unsplash.com/photo-1585036156171-384164a8c159?w=600" alt="Masjid">
+                    <div class="gallery-overlay">
+                        <h4>Masjid Jami'</h4>
+                        <p>Fasilitas</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="tahfidz">
+                    <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=600" alt="Tahfidz">
+                    <div class="gallery-overlay">
+                        <h4>Setoran Hafalan</h4>
+                        <p>Tahfidz</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="akademik">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Kelas">
+                    <div class="gallery-overlay">
+                        <h4>Kegiatan Belajar</h4>
+                        <p>Akademik</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="ekskul">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600" alt="Olahraga">
+                    <div class="gallery-overlay">
+                        <h4>Kompetisi Olahraga</h4>
+                        <p>Ekstrakurikuler</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="acara">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600" alt="Wisuda">
+                    <div class="gallery-overlay">
+                        <h4>Wisuda Tahfidz</h4>
+                        <p>Acara</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="fasilitas">
+                    <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=600" alt="Perpustakaan">
+                    <div class="gallery-overlay">
+                        <h4>Perpustakaan</h4>
+                        <p>Fasilitas</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="akademik">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600" alt="Lab">
+                    <div class="gallery-overlay">
+                        <h4>Praktikum Lab</h4>
+                        <p>Akademik</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="ekskul">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Kaligrafi">
+                    <div class="gallery-overlay">
+                        <h4>Seni Kaligrafi</h4>
+                        <p>Ekstrakurikuler</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" data-category="acara">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600" alt="Haflah">
+                    <div class="gallery-overlay">
+                        <h4>Haflah Akhirussanah</h4>
+                        <p>Acara</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom">
+        <p>&copy; 2026 Pondok Pesantren Mambaul Uluum Premium. All Rights Reserved.</p>
+    </div></div></footer>
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+</html>
