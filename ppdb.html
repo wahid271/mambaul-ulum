@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB Online - Mambaul Uluum Premium</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar"><div class="container"><div class="top-bar-content">
+        <div class="top-left"><span><i class="fas fa-phone"></i> +62 812-3456-7890</span></div>
+        <div class="top-right"><a href="#"><i class="fab fa-facebook"></i></a></div>
+    </div></div></div>
+    <nav class="navbar" id="navbar">
+        <div class="container"><div class="nav-wrapper">
+            <a href="index.html" class="logo"><div class="logo-icon">🕌</div><div class="logo-text"><h1>Mambaul Uluum</h1><span>Premium Islamic Boarding</span></div></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="pendidikan.html">Pendidikan</a></li><li><a href="pesantren.html">Pesantren</a></li><li><a href="ppdb.html" class="active">PPDB</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <a href="ppdb.html" class="btn-daftar"><i class="fas fa-user-plus"></i> Daftar</a>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div></div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">PPDB Online 2026/2027</h1>
+            <p class="fade-in-up delay-1">Penerimaan Peserta Didik Baru</p>
+            <div class="breadcrumb fade-in-up delay-2">
+                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> / <span>PPDB</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="ppdb-info">
+        <div class="container">
+            <div class="info-cards reveal">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-calendar"></i></div>
+                    <h4>Pendaftaran</h4>
+                    <p><strong>1 Jan - 30 Jun 2026</strong></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Tes Seleksi</h4>
+                    <p><strong>15 Juli 2026</strong></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h4>Pengumuman</h4>
+                    <p><strong>25 Juli 2026</strong></p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-user-check"></i></div>
+                    <h4>Daftar Ulang</h4>
+                    <p><strong>1 - 10 Agustus 2026</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ppdb-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-sidebar reveal">
+                    <h3><i class="fas fa-info-circle"></i> Informasi Pendaftaran</h3>
+                    <div class="sidebar-item">
+                        <h4><i class="fas fa-file-invoice"></i> Persyaratan</h4>
+                        <ul>
+                            <li>Fotocopy Akta Kelahiran</li>
+                            <li>Fotocopy Kartu Keluarga</li>
+                            <li>Ijazah/SKL SD/MI/SMP/MTs</li>
+                            <li>Pas Foto 3x4 (6 lembar)</li>
+                            <li>Surat Keterangan Sehat</li>
+                            <li>Surat Rekomendasi Sekolah</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4><i class="fas fa-money-bill"></i> Biaya Pendaftaran</h4>
+                        <ul>
+                            <li>Biaya Pendaftaran: Rp 350.000</li>
+                            <li>Biaya Masuk: Rp 15.000.000</li>
+                            <li>SPP Bulanan: Rp 1.500.000</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4><i class="fas fa-headset"></i> Bantuan</h4>
+                        <p>Hubungi panitia PPDB:</p>
+                        <a href="https://wa.me/6281234567890" class="btn-wa"><i class="fab fa-whatsapp"></i> Chat Admin</a>
+                    </div>
+                </div>
+
+                <form class="ppdb-form reveal" id="ppdbForm">
+                    <h3><i class="fas fa-edit"></i> Formulir Pendaftaran</h3>
+
+                    <!-- Step Indicator -->
+                    <div class="step-indicator">
+                        <div class="step active" data-step="1"><span>1</span><p>Data Diri</p></div>
+                        <div class="step" data-step="2"><span>2</span><p>Orang Tua</p></div>
+                        <div class="step" data-step="3"><span>3</span><p>Akademik</p></div>
+                        <div class="step" data-step="4"><span>4</span><p>Konfirmasi</p></div>
+                    </div>
+
+                    <!-- Step 1: Data Diri -->
+                    <div class="form-step active" data-step="1">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Lengkap *</label>
+                                <input type="text" name="nama" required placeholder="Nama lengkap sesuai ijazah">
+                            </div>
+                            <div class="form-group">
+                                <label>NIK *</label>
+                                <input type="text" name="nik" required maxlength="16" placeholder="16 digit NIK">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Tempat Lahir *</label>
+                                <input type="text" name="tempat_lahir" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Tanggal Lahir *</label>
+                                <input type="date" name="tgl_lahir" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Jenis Kelamin *</label>
+                                <select name="gender" required>
+                                    <option value="">-- Pilih --</option>
+                                    <option value="L">Laki-laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>No. HP/WA *</label>
+                                <input type="tel" name="hp" required placeholder="08xxxxxxxxxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Lengkap *</label>
+                            <textarea name="alamat" rows="3" required></textarea>
+                        </div>
+                        <button type="button" class="btn-next">Lanjutkan <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Step 2: Data Orang Tua -->
+                    <div class="form-step" data-step="2">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Ayah *</label>
+                                <input type="text" name="nama_ayah" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Pekerjaan Ayah *</label>
+                                <input type="text" name="pekerjaan_ayah" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Ibu *</label>
+                                <input type="text" name="nama_ibu" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Pekerjaan Ibu *</label>
+                                <input type="text" name="pekerjaan_ibu" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Penghasilan Orang Tua *</label>
+                                <select name="penghasilan" required>
+                                    <option value="">-- Pilih --</option>
+                                    <option>< Rp 3 juta</option>
+                                    <option>Rp 3 - 7 juta</option>
+                                    <option>Rp 7 - 15 juta</option>
+                                    <option>> Rp 15 juta</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>No. HP Orang Tua *</label>
+                                <input type="tel" name="hp_ortu" required>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-prev"><i class="fas fa-arrow-left"></i> Kembali</button>
+                        <button type="button" class="btn-next">Lanjutkan <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Step 3: Data Akademik -->
+                    <div class="form-step" data-step="3">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Asal Sekolah *</label>
+                                <input type="text" name="asal_sekolah" required>
+                            </div>
+                            <div class="form-group">
+                                <label>NPSN Sekolah</label>
+                                <input type="text" name="npsn">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Program yang Dipilih *</label>
+                                <select name="program" required>
+                                    <option value="">-- Pilih Program --</option>
+                                    <option>SMP Unggulan</option>
+                                    <option>SMA Unggulan</option>
+                                    <option>Ma'had Aly</option>
+                                    <option>Tahfidz Intensif</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Nilai Rata-rata Rapor *</label>
+                                <input type="number" name="nilai" step="0.01" min="0" max="100" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Hafalan Al-Quran Saat Ini</label>
+                            <select name="hafalan">
+                                <option>Belum menghafal</option>
+                                <option>Juz 30</option>
+                                <option>1 - 5 Juz</option>
+                                <option>6 - 15 Juz</option>
+                                <option>16 - 30 Juz</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Prestasi / Pengalaman Organisasi</label>
+                            <textarea name="prestasi" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn-prev"><i class="fas fa-arrow-left"></i> Kembali</button>
+                        <button type="button" class="btn-next">Lanjutkan <i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <!-- Step 4: Konfirmasi -->
+                    <div class="form-step" data-step="4">
+                        <div class="confirm-box">
+                            <h4><i class="fas fa-clipboard-check"></i> Konfirmasi Data</h4>
+                            <div class="confirm-data" id="confirmData"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="agree" required>
+                                <span>Saya menyatakan data yang diisi benar dan bersedia mengikuti seluruh aturan pesantren *</span>
+                            </label>
+                        </div>
+                        <button type="button" class="btn-prev"><i class="fas fa-arrow-left"></i> Kembali</button>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Kirim Pendaftaran
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success"><i class="fas fa-check-circle"></i></div>
+            <h2>Pendaftaran Berhasil!</h2>
+            <p>Nomor Pendaftaran Anda:</p>
+            <div class="reg-number" id="regNumber">MUP-2026-00001</div>
+            <p>Silakan simpan nomor pendaftaran untuk keperluan selanjutnya. Info lebih lanjut akan dikirim via WhatsApp.</p>
+            <button class="btn btn-primary" onclick="window.location.href='index.html'">Kembali ke Beranda</button>
+        </div>
+    </div>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom">
+        <p>&copy; 2026 Pondok Pesantren Mambaul Uluum Premium. All Rights Reserved.</p>
+    </div></div></footer>
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ppdb.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+</html>
