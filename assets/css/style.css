@@ -70,7 +70,7 @@ input:focus, select:focus, textarea:focus {
 .top-right a {
     display: inline-flex; width: 30px; height: 30px;
     align-items: center; justify-content: center;
-    border-radius: 50%; background: rgba(255,255,255,0.1);
+    border-radius: 50%; background: rgba(14, 14, 14, 0.1);
     transition: var(--transition);
 }
 .top-right a:hover { background: var(--secondary); }

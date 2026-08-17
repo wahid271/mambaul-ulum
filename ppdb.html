@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPDB Online - wadi muqoddas</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    <title>Pendaftaran Santri - wadi muqoddas</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animation.css">
@@ -16,15 +17,15 @@
         <div class="container"><div class="nav-wrapper">
 <a href="index.html" class="logo">
     <div class="logo-icon">
-        <img src="assets/logo.png" alt="Logo AL Kinanah">
+        <img src="assets/logo.png" alt="Logo wadi muqoddas" onerror="this.outerHTML='🕌'">
     </div>
 
     <div class="logo-text">
         <h1>wadi muqoddas</h1>
-        <span>Jambi</span>
+        <span>jambi</span>
     </div>
 </a>            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="pendidikan.html">Pendidikan</a></li><li><a href="pesantren.html">Pesantren</a></li><li><a href="ppdb.html" class="active">PPDB</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li>
+                <li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil Pesantren</a></li><li><a href="pendidikan.html">Program Pesantren</a></li><li><a href="pesantren.html">Kehidupan Santri</a></li><li><a href="ppdb.html" class="active">Pendaftaran Santri</a></li><li><a href="galeri.html">Galeri</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li>
             </ul>
             <a href="ppdb.html" class="btn-daftar"><i class="fas fa-user-plus"></i> Daftar</a>
             <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
@@ -33,10 +34,10 @@
 
     <section class="page-header">
         <div class="container">
-            <h1 class="fade-in-up">PPDB Online 2026/2027</h1>
-            <p class="fade-in-up delay-1">Penerimaan Peserta Didik Baru</p>
+            <h1 class="fade-in-up">Pendaftaran Santri Baru 2026/2027</h1>
+            <p class="fade-in-up delay-1">Penerimaan Santri Baru</p>
             <div class="breadcrumb fade-in-up delay-2">
-                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> / <span>PPDB</span>
+                <a href="index.html"><i class="fas fa-home"></i> Beranda</a> / <span>Pendaftaran Santri</span>
             </div>
         </div>
     </section>
@@ -78,10 +79,10 @@
                         <ul>
                             <li>Fotocopy Akta Kelahiran</li>
                             <li>Fotocopy Kartu Keluarga</li>
-                            <li>Ijazah/SKL SD/MI/SMP/MTs</li>
+                            <li>Fotocopy Ijazah Terakhir</li>
                             <li>Pas Foto 3x4 (6 lembar)</li>
                             <li>Surat Keterangan Sehat</li>
-                            <li>Surat Rekomendasi Sekolah</li>
+                            <li>Surat Rekomendasi Ustadz</li>
                         </ul>
                     </div>
                     <div class="sidebar-item">
@@ -89,12 +90,12 @@
                         <ul>
                             <li>Biaya Pendaftaran: Rp 350.000</li>
                             <li>Biaya Masuk: Rp 15.000.000</li>
-                            <li>SPP Bulanan: Rp 1.500.000</li>
+                            <li>Syahriah Bulanan: Rp 1.500.000</li>
                         </ul>
                     </div>
                     <div class="sidebar-item">
                         <h4><i class="fas fa-headset"></i> Bantuan</h4>
-                        <p>Hubungi panitia PPDB:</p>
+                        <p>Hubungi panitia pendaftaran:</p>
                         <a href="https://wa.me/6281234567890" class="btn-wa"><i class="fab fa-whatsapp"></i> Chat Admin</a>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                     <div class="step-indicator">
                         <div class="step active" data-step="1"><span>1</span><p>Data Diri</p></div>
                         <div class="step" data-step="2"><span>2</span><p>Orang Tua</p></div>
-                        <div class="step" data-step="3"><span>3</span><p>Akademik</p></div>
+                        <div class="step" data-step="3"><span>3</span><p>Pendidikan</p></div>
                         <div class="step" data-step="4"><span>4</span><p>Konfirmasi</p></div>
                     </div>
 
@@ -195,16 +196,16 @@
                         <button type="button" class="btn-next">Lanjutkan <i class="fas fa-arrow-right"></i></button>
                     </div>
 
-                    <!-- Step 3: Data Akademik -->
+                    <!-- Step 3: Data Pendidikan -->
                     <div class="form-step" data-step="3">
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Asal Sekolah *</label>
+                                <label>Asal Sekolah/Madrasah *</label>
                                 <input type="text" name="asal_sekolah" required>
                             </div>
                             <div class="form-group">
-                                <label>NPSN Sekolah</label>
-                                <input type="text" name="npsn">
+                                <label>Asal Madrasah/Pesantren</label>
+                                <input type="text" name="asal_pesantren">
                             </div>
                         </div>
                         <div class="form-row">
@@ -212,14 +213,13 @@
                                 <label>Program yang Dipilih *</label>
                                 <select name="program" required>
                                     <option value="">-- Pilih Program --</option>
-                                    <option>SMP Unggulan</option>
-                                    <option>SMA Unggulan</option>
+                                    <option>Tahfidzul Quran</option>
+                                    <option>Kajian Kitab (Diniyah)</option>
                                     <option>Ma'had Aly</option>
-                                    <option>Tahfidz Intensif</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Nilai Rata-rata Rapor *</label>
+                                <label>Nilai Rapor Terakhir *</label>
                                 <input type="number" name="nilai" step="0.01" min="0" max="100" required>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
             <div class="modal-icon success"><i class="fas fa-check-circle"></i></div>
             <h2>Pendaftaran Berhasil!</h2>
             <p>Nomor Pendaftaran Anda:</p>
-            <div class="reg-number" id="regNumber">MUP-2026-00001</div>
+            <div class="reg-number" id="regNumber">WMJ-2026-00001</div>
             <p>Silakan simpan nomor pendaftaran untuk keperluan selanjutnya. Info lebih lanjut akan dikirim via WhatsApp.</p>
             <button class="btn btn-primary" onclick="window.location.href='index.html'">Kembali ke Beranda</button>
         </div>

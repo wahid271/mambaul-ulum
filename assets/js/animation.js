@@ -17,7 +17,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach(el => revealObserver.observe(el));
 
 // ===== COUNTER ANIMATION =====
-const counters = document.querySelectorAll('.stat h3, .milestone-item h3, .badge-exp h4');
+const counters = document.querySelectorAll('.stat h3, .badge-exp h4');
 
 const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

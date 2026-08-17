@@ -95,9 +95,9 @@ const generateConfirmation = () => {
         pekerjaan_ibu: 'Pekerjaan Ibu',
         penghasilan: 'Penghasilan',
         hp_ortu: 'No. HP Ortu',
-        asal_sekolah: 'Asal Sekolah',
+        asal_sekolah: 'Asal Sekolah/Madrasah',
         program: 'Program',
-        nilai: 'Nilai Rapor',
+        nilai: 'Nilai Rapor Terakhir',
         hafalan: 'Hafalan'
     };
 
@@ -124,7 +124,7 @@ form?.addEventListener('submit', (e) => {
     }
 
     // Generate registration number
-    const regNum = 'MUP-2026-' + String(Math.floor(Math.random() * 99999) + 1).padStart(5, '0');
+    const regNum = 'WMJ-2026-' + String(Math.floor(Math.random() * 99999) + 1).padStart(5, '0');
     document.getElementById('regNumber').textContent = regNum;
 
     // Show success modal
@@ -158,4 +158,4 @@ form?.querySelector('[name="hp_ortu"]')?.addEventListener('input', (e) => {
     e.target.value = e.target.value.replace(/\D/g, '').slice(0, 13);
 });
 
-console.log('📝 PPDB Form initialized');
+console.log('📝 Form Pendaftaran Santri initialized');
